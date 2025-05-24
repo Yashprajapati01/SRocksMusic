@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
 class CustomBottomNavBar extends StatelessWidget {
@@ -27,10 +28,10 @@ class CustomBottomNavBar extends StatelessWidget {
         border: Border(
           top: BorderSide(
             color: const Color.fromRGBO(44, 45, 49, 1),
-            width: 1,
+            width: 1.w,
           ),
         ),
-        borderRadius: BorderRadius.vertical(top: Radius.circular(24)),
+        borderRadius: BorderRadius.vertical(top: Radius.circular(24.r)),
       ),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceAround,
@@ -46,17 +47,17 @@ class CustomBottomNavBar extends StatelessWidget {
               mainAxisSize: MainAxisSize.min,
               children: [
                 Container(
-                  height: 7,
-                  width: 14,
+                  height: 7.h,
+                  width: 14.w,
                   decoration: BoxDecoration(
                     color: isSelected ? Colors.white : Colors.transparent,
                     borderRadius: BorderRadius.vertical(
-                      bottom: Radius.circular(12),
+                      bottom: Radius.circular(12.r),
                     ),
                   ),
                 ),
                 Padding(
-                  padding: const EdgeInsets.symmetric(vertical: 13.0),
+                  padding:  EdgeInsets.symmetric(vertical: 13.0.h),
                   child: Column(
                     children: [
                       // Icon
@@ -64,32 +65,32 @@ class CustomBottomNavBar extends StatelessWidget {
                           ? item.icon.toLowerCase().endsWith('.svg')
                           ? SvgPicture.asset(
                         item.icon,
-                        height: 24,
+                        height: 24.h,
                         color: Colors.white,
                       )
                           : Image.asset(
                         item.icon,
-                        height: 24,
+                        height: 24.h,
                         color: Colors.white,
                       )
                           : item.icon.toLowerCase().endsWith('.svg')
                           ? SvgPicture.asset(
                         item.icon,
-                        height: 24,
+                        height: 24.h,
                         color: Colors.grey,
                       )
                           : Image.asset(
                         item.icon,
-                        height: 24,
+                        height: 24.h,
                         color: Colors.grey,
                       ),
-                      const SizedBox(height: 4),
+                       SizedBox(height: 4.h),
                       // Label
                       Text(
                         item.label,
                         style: TextStyle(
                           fontFamily: 'Syne',
-                          fontSize: 11,
+                          fontSize: 11.sp,
                           color: isSelected ? Colors.white : Color.fromRGBO(97, 97, 107, 1),
                           fontWeight: isSelected ? FontWeight.w400 : FontWeight.normal,
                         ),

@@ -1,13 +1,14 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
 class CustomSearchBar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: EdgeInsets.symmetric(horizontal: 12),
+      padding: EdgeInsets.symmetric(horizontal: 12.w),
       width: double.infinity,
-      height: 44,
+      height: 44.h,
       decoration: BoxDecoration(
         color: Color.fromRGBO(47, 47, 57, 1),
         borderRadius: BorderRadius.circular(10),
@@ -15,14 +16,14 @@ class CustomSearchBar extends StatelessWidget {
       child: Row(
         children: [
           Padding(
-            padding: const EdgeInsets.all(2.5),
+            padding: EdgeInsets.all(2.5.w),
             child: SvgPicture.asset(
               'assets/icons/searchicon.svg',
-              height: 15,
-              width: 15,
+              height: 15.h,
+              width: 15.w,
             ),
           ),
-          SizedBox(width: 10),
+          SizedBox(width: 10.w),
           Expanded(
             child: TextField(
               style: TextStyle(color: Colors.white),
@@ -35,18 +36,18 @@ class CustomSearchBar extends StatelessWidget {
                   fontFamily: 'Syne',
                   fontWeight: FontWeight.w500,
                   color: Color.fromRGBO(97, 97, 107, 1),
-                  fontSize: 14,
+                  fontSize: 14.sp,
                 ),
                 border: InputBorder.none,
               ),
             ),
           ),
           Container(
-            width: 1,
-            height: 21,
+            width: 1.w,
+            height: 21.h,
             color: Color.fromRGBO(69, 69, 79, 1),
           ),
-          SizedBox(width: 10),
+          SizedBox(width: 10.w),
           Icon(Icons.mic, color: Colors.white),
         ],
       ),

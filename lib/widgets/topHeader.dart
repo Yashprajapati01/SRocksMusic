@@ -1,4 +1,5 @@
 import 'package:flutter/cupertino.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'gradientBg.dart';
 
 class Topheader extends StatelessWidget {
@@ -15,21 +16,21 @@ class Topheader extends StatelessWidget {
             child: GradientBackground(),
           ),
           Positioned(
-            left: -27,
-            top: 220,
+            left: -27.w,
+            top: 220.h,
             child: Image.asset(
               'assets/images/coverArt.png',
-              width: 120,
-              height: 120,
+              width: 120.w,
+              height: 120.h,
             ),
           ),
           Positioned(
-            right: -35,
-            top: 210,
+            right: -35.w,
+            top: 210.h,
             child: Image.asset(
               'assets/images/piano.png',
-              width: 120,
-              height: 120,
+              width: 120.w,
+              height: 120.h,
             ),
           ),
         ]

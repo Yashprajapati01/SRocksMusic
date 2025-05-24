@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:music_app/views/serviceDetailsScreen.dart';
 import 'package:music_app/widgets/topHeader.dart';
 import 'package:music_app/widgets/CustomNavBar.dart';
@@ -16,20 +17,20 @@ class HomeScreen extends StatelessWidget {
         body: Column(
           children: [
             SizedBox(
-              height: 350,
+              height: 350.h,
               child: Topheader(),
             ),
-            const SizedBox(height: 24),
-            const Text(
+             SizedBox(height: 24.h),
+             Text(
               'Hire hand-picked Pros for popular music services',
               style: TextStyle(
                 fontFamily: 'Syne',
-                fontSize: 15,
+                fontSize: 15.sp,
                 fontWeight: FontWeight.w400,
                 color: Colors.white,
               ), // For visibility on dark bg
             ),
-            const SizedBox(height: 24),
+             SizedBox(height: 24.h),
             Expanded(
               child: Consumer<ServiceViewModel>(
                 builder: (context, viewModel, child) {

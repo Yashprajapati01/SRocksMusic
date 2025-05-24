@@ -39,6 +39,7 @@
 //   }
 // }
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import '../models/service_models.dart';
 
 class ServiceTile extends StatelessWidget {
@@ -49,11 +50,11 @@ class ServiceTile extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 80,
-      margin: const EdgeInsets.symmetric(vertical: 11, horizontal: 30),
+      height: 70.h,
+      margin: EdgeInsets.symmetric(vertical: 8.h, horizontal: 30.w),
       decoration: BoxDecoration(
-        borderRadius: BorderRadius.circular(15),
-        border: Border.all(color: Color.fromRGBO(44, 45, 49, 1),width: 1),
+        borderRadius: BorderRadius.circular(15.r),
+        border: Border.all(color: Color.fromRGBO(44, 45, 49, 1), width: 1.w),
         image: DecorationImage(
           image: AssetImage(service.backgroundImage),
           fit: BoxFit.cover,
@@ -64,20 +65,17 @@ class ServiceTile extends StatelessWidget {
           // overlay
           Container(
             decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(15),
-              color: Color.fromRGBO(32, 33, 38, 0.85)
+              borderRadius: BorderRadius.circular(15.r),
+              color: Color.fromRGBO(32, 33, 38, 0.85),
             ),
           ),
           // Foreground content
           Padding(
-            padding: const EdgeInsets.all(12),
+            padding: EdgeInsets.all(12.w),
             child: Row(
               children: [
                 // Icon
-                Image.asset(
-                  service.icon,
-                  fit: BoxFit.contain,
-                ),
+                Image.asset(service.icon, fit: BoxFit.contain),
                 // ClipRRect(
                 //   borderRadius: BorderRadius.circular(10),
                 //   child: Container(
@@ -93,7 +91,7 @@ class ServiceTile extends StatelessWidget {
                 //     ),
                 //   ),
                 // ),
-                const SizedBox(width: 10),
+                SizedBox(width: 10.w),
                 // Title and subtitle
                 Expanded(
                   child: Column(
@@ -102,20 +100,20 @@ class ServiceTile extends StatelessWidget {
                     children: [
                       Text(
                         service.title,
-                        style: const TextStyle(
+                        style: TextStyle(
                           fontFamily: 'Syne',
                           fontWeight: FontWeight.w700,
-                          fontSize: 15,
+                          fontSize: 15.sp,
                           color: Colors.white,
                         ),
                       ),
                       // const SizedBox(height: 4),
                       Text(
                         service.description,
-                        style: const TextStyle(
+                        style: TextStyle(
                           fontFamily: 'Syne',
                           fontWeight: FontWeight.w400,
-                          fontSize: 13,
+                          fontSize: 13.sp,
                           color: Colors.white,
                         ),
                       ),
