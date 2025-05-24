@@ -65,7 +65,7 @@ class HomeScreen extends StatelessWidget {
                 },
               ),
             ),
-            CustomBottomNavBar(selectedIndex: 0, onItemTapped: (v){})
+            CustomBottomNavBar(selectedIndex: 0, onItemTapped: (v){}),
           ],
         ),
       ),
