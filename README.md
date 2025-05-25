@@ -92,10 +92,10 @@ flutter run
 
 ### 📸 Screenshots
 
-| Home Screen                      | Detail Screen                        | Home Screen (Video)          |
+| Home Screen                      | Detail Screen                        | Home Screen Again (GIF)            |
 | -------------------------------- | ------------------------------------ | ---------------------------------- |
-| ![Home](homepage.png)            | ![Details](detailsPage.png)          | [![Video]](sample_video.mp4) |
-         |
+| ![Home](homepage.png)            | ![Details](detailsPage.png)          | ![GIF](sample_video.gif)           |
+
 
 
 ---
