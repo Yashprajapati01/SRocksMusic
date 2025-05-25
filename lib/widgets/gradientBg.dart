@@ -10,15 +10,14 @@ class GradientBackground extends StatelessWidget {
       child: Container(
         width: double.infinity,
         height: 350.h,
-        padding:  EdgeInsets.fromLTRB(20.w, 50.h, 0, 24.h),
-        // Adjust for status bar & spacing
+        padding:  EdgeInsets.fromLTRB(20.w, 50.h, 20.w, 24.h),//spacing for the search bar
         decoration:  BoxDecoration(
           gradient: LinearGradient(
             begin: Alignment.topCenter,
             end: Alignment.bottomCenter,
             colors: [
-              Color(0xFFA90140), // Top color
-              Color(0xFF550120), // End (dark purple)
+              Color(0xFFA90140),
+              Color(0xFF550120),
             ],
           ),
           borderRadius: BorderRadius.only(
@@ -33,7 +32,7 @@ class GradientBackground extends StatelessWidget {
               children: [
                 Expanded(child: CustomSearchBar()),
                 Padding(
-                  padding:  EdgeInsets.fromLTRB(17.w, 5.h, 20.w, 5.h),
+                  padding:  EdgeInsets.fromLTRB(17.w, 5.h, 0, 5.h),
                   child: CircleAvatar(
                     radius: 17.r,
                     child: SvgPicture.asset(

@@ -92,9 +92,9 @@ flutter run
 
 ### 📸 Screenshots
 
-| Home Screen                      | Tapped Detail                        |
+| Home Screen                      |  Detail Screen                       |
 | -------------------------------- | ------------------------------------ |
-| ![alt text](image.png) | ![alt text](image-1.png) |
+| ![alt text](homepage.png) | ![alt text](detailsPage.png) |
 
 ---
 
