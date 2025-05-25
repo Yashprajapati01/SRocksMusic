@@ -19,6 +19,7 @@ class HomeScreen extends StatelessWidget {
       },
       // create: (_) => viewModel..loadServices(),
       child: Scaffold(
+        resizeToAvoidBottomInset: false,
         backgroundColor: Color.fromRGBO(24, 23, 28, 1),
         body: Column(
           children: [

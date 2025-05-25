@@ -92,9 +92,11 @@ flutter run
 
 ### 📸 Screenshots
 
-| Home Screen                      |  Detail Screen                       |
-| -------------------------------- | ------------------------------------ |
-| ![alt text](homepage.png) | ![alt text](detailsPage.png) |
+| Home Screen                      | Detail Screen                        | Home Screen (Video)          |
+| -------------------------------- | ------------------------------------ | ---------------------------------- |
+| ![Home](homepage.png)            | ![Details](detailsPage.png)          | [![Video]](sample_video.mp4) |
+         |
+
 
 ---
 
